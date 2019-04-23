@@ -15,8 +15,7 @@ services:
       - 3306:3306
 
   php:
-    image: leonardob/d4a:v1
-    volumes:
+    image: stage3
       - ./code/:/var/www/html
     expose:
       - 80
@@ -24,4 +23,3 @@ services:
       - 80:80
     links:
       - mysql
-
