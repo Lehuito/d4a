@@ -12,9 +12,14 @@ pipeline{
                         }
                 }
                 stage("Build Docker"){
-                       steps{ 
-				sh "sudo docker build --tag=stage3 ."					}
-		}
-				
+                        steps{
+								sh "sudo docker build --tag=stage3 ."
+						}
+				}
+				stage("Deploy Container"){
+						steps{
+								sh "sudo docker-compose up stage3"
+						}
+				}
         }
 }
