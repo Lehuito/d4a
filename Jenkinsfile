@@ -1,8 +1,8 @@
 pipeline{
 	agent any
-	satages{
+	stages{
 		stage("Initial Setup"){
-			setps{
+			steps{
 				sh "echo Starting..."
 			}
 		}	
