@@ -13,6 +13,7 @@ pipeline{
                 }
                 stage("Build Docker"){
                         steps{
+				sh "sudo docker image rm stage3"
 				sh "sudo docker build --tag=stage3 ."
 			}
 		}
