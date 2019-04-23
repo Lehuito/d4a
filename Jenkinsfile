@@ -18,7 +18,7 @@ pipeline{
 				}
 				stage("Deploy Container"){
 						steps{
-								sh "sudo docker-compose up stage3"
+								sh "sudo docker-compose up"
 						}
 				}
         }
