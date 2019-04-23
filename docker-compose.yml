@@ -16,7 +16,6 @@ services:
 
   php:
     image: stage3
-      - ./code/:/var/www/html
     expose:
       - 80
     ports:
